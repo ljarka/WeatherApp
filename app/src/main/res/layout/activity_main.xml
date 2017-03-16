@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.github.ljarka.weatherapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:src="@drawable/humidity"/>
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/weather_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textSize="24sp"
+        tools:text="Poznań"/>
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weather_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textSize="24sp"
+        tools:text="13 stopni"/>
+
+    <TextView
+        android:id="@+id/sky_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temperature"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        tools:text="Sky is clear"/>
+
+</RelativeLayout>
